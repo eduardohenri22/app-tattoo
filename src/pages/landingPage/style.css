@@ -123,8 +123,8 @@ input::placeholder {
     }
 
     img {
-        width: 250px;
-        margin-left: 10px;
+        width: 280px;
+        margin-left: 18px;
     }
 
     .divInputBt{
@@ -134,12 +134,12 @@ input::placeholder {
     }
 
     button {
-        width: 150px;
+        width: 220px;
         height: 30px;
     }
 
     input {
-        width: 200px;
+        width: 250px;
     }
 
     h1 {

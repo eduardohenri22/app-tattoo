@@ -9,11 +9,10 @@ function App() {
 
 
   return (
-      // <div class="background">
     <div className="App">
       <AllRoutes />
       <ToastContainer />
-   {/* <span></span>
+    <span></span>
    <span></span>
    <span></span>
    <span></span>
@@ -36,7 +35,7 @@ function App() {
    <span></span>
    <span></span>
    <span></span>
-</div> */}
+
     </div>
   );
 }

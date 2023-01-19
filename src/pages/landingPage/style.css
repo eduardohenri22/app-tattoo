@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: black;
+    border: none;
+    color: white;
+    font-size: large;
+    width: 350px;
+    height: 50px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 15px 20px 8px rgba(0,0,0,0.44); 
+    box-shadow: 0px 15px 20px 8px rgba(0,0,0,0.44);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: transparent;
+    color: black;
+    transition: 0.6s;
+}
+
+h1 {
+    width: 450px;
+    font-size: 25px;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.divImg {
+    margin-left: 20px;
+    animation: slide-in-blurred-left 1.3s;
+} 
+
+input {
+    background-color: white;
+    width: 250px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    color: black;
+}
+
+.divInputBt {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+
+.slide-in-blurred-left {
+	-webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+
+ @-webkit-keyframes slide-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-blurred-left {
+    0% {
+      -webkit-transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+              transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      -webkit-filter: blur(40px);
+              filter: blur(40px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      -webkit-filter: blur(0);
+              filter: blur(0);
+      opacity: 1;
+    }
+  }
+  
+
+@media (max-width: 500px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .divImg {
+        width: 100vw;
+        
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    img {
+        width: 430px;
+        margin-left: 10px;
+    }
+
+    .divInputBt{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    button {
+        width: 200px;
+    }
+
+    input {
+        width: 300px;
+    }
+
+
+}

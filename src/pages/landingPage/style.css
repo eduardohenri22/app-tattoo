@@ -123,7 +123,7 @@ input::placeholder {
     }
 
     img {
-        width: 300px;
+        width: 250px;
         margin-left: 10px;
     }
 
@@ -139,11 +139,11 @@ input::placeholder {
     }
 
     input {
-        width: 250px;
+        width: 200px;
     }
 
     h1 {
-        width: 250px;
+        width: 200px;
         font-size: medium;
     }
 

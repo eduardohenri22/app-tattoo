@@ -6,7 +6,6 @@ const AllRoutes = () => {
     return(
         <Routes>
             <Route index element={<LandingPage/>} />
-
         </Routes>
     )
 }
